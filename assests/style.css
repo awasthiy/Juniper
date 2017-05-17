@@ -1,6 +1,4 @@
-html {
-  background: url("bg.png") repeat;
-}
+
 
 body {
   font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -69,7 +67,7 @@ a:hover {
   width: 190px;
   height: 64px;
   margin: 15px 0 0 15px;
-  background: url("logo.png");
+  background: url("images.png");
   text-indent: -99999px;
 }
 
