@@ -57,7 +57,6 @@
   <script type="text/javascript">
     (function($, undefined) {
       // Put custom repo URL's in this object, keyed by repo name.
-    	var wanted_repo = ['jsnapy','ansible-junos-stdlib','py-junos-eznc','open-nti','salt'];
       $("#num-repos").text(wanted_repo.length);
       $("#num-members").text("10");
       function repoUrl(repo) {
@@ -81,14 +80,10 @@
       }
     
       function addRepos(repos, page) {
-        repos =  [];
-        page = page || 1;
-        
-    
+
         $.getJSON('data.json', function(result) {
          
           $.each(result, function(i) {
-                alert(result[i].name);
                 addRepo(result[i]);
               });
         });
