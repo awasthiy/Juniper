@@ -63,16 +63,6 @@ a:hover {
   line-height: 2;
 }
 
-#logo {
-  width: 190px;
-  height: 64px;
-  margin: 15px 0 0 15px;
-  text-indent: -99999px;
-}
-
-#logo h1 {
-  margin: 0;
-}
 
 div.header {
   height: 130px;
@@ -93,47 +83,7 @@ div.header h1 {
   line-height: 15px;
 }
 
-#statistics a:link, #statistics a:visited {
-  color: inherit;
-}
 
-#statistics p.email {
-  margin-top: 6px;
-  font-size: 11px;
-}
-
-#recently-updated h1 a {
-  font-weight: normal;
-  font-size: 11px;
-}
-
-#recently-updated-repos {
-  margin-left: 15px;
-}
-
-#recently-updated-repos li {
-  line-height: 1.5;
-}
-
-#recently-updated-repos li span {
-  display: inline-block;
-  padding: 0 1px;
-}
-
-#recently-updated-repos li span {
-  font-size: 11px;
-}
-
-#recently-updated-repos li span.name {
-  padding: 0 6px 0;
-  font-size: 13px;
-}
-
-#recently-updated-repos li span.time a,
-#recently-updated-repos li span.watchers a,
-#recently-updated-repos li span.forks a {
-  color: #999;
-}
 
 li.repo {
   height: 250px;
@@ -258,7 +208,7 @@ li.repo h3 {
   }
   
   #main {
-    width: 100%;
+    width: 200%;
     display: inline-block;
     float: none;
     height: auto;
