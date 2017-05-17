@@ -82,50 +82,19 @@
       function addRepos(repos, page) {
         repos =  [];
         page = page || 1;
+        
     
-        var uri =
-          "https://api.github.com/orgs/Juniper/repos?callback=?" +
-          "&per_page=100" +
-          "&page=" +
-          page;
-    
-        $.getJSON(uri, function(result) {
-          if (result.data && result.data.length > 0) {
-            repos = (result.data);
-            addRepos(repos, page + 1);
-          }
-          $.each(repos, function(i, repo) {
-            	if((wanted_repo.indexOf(repo.name) != -1)) {
-                //alert(repo.name);
-                addRepo(repo);
-              }
+        $.getJSON('data.json', function(result) {
+         
+          $.each(result, function(i) {
+                alert(result[i].name);
+                addRepo(result[i]);
               });
         });
       }
       addRepos();
     
-      //get total number of Twitter members
-      function getNumMembers(page, numMembers) {
-        var page = page || 1;
-        var numMembers = numMembers || 0;
-        var membersUri =
-          "https://api.github.com/orgs/Juniper/members?callback=?" +
-          "&per_page=100" +
-          "&page=" +
-          page;
-    
-        $.getJSON(membersUri, function(result) {
-          if (result.data && result.data.length > 0) {
-            numMembers += result.data.length;
-            getNumMembers(page + 1, numMembers);
-          } else {
-            $(function() {
-              $("#num-members").text(numMembers);
-            });
-          }
-        });
-      }
-      getNumMembers();
+
  
     })(jQuery);
   </script>
