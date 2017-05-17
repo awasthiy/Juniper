@@ -208,7 +208,7 @@ li.repo h3 {
   }
   
   #main {
-    width: 200%;
+    width: 100%;
     display: inline-block;
     float: none;
     height: auto;
@@ -260,7 +260,7 @@ li.repo h3 {
   
   .grid .grid-1,
   .grid .grid-2 {
-    width: 100%;
+    width: 200%;
     margin-right: 0;
     margin-left: 0;
   }
