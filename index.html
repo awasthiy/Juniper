@@ -2,8 +2,8 @@
 
 <head>
   <title>JUNIPER &hearts; Open Source</title>
-  <link rel="stylesheet" type="text/css" href="assests/grid.css">
   <link rel="stylesheet" type="text/css" href="assests/style.css">
+  <link rel="stylesheet" type="text/css" href="assests/grid.css">
 
 </head>
 
@@ -57,6 +57,7 @@
     (function($, undefined) {
       // Put custom repo URL's in this object, keyed by repo name.
     	var wanted_repo = ['jsnapy','ansible-junos-stdlib','py-junos-eznc','open-nti','salt'];
+      $("#num-repos").text(wanted_repo.length);
       function repoUrl(repo) {
         return  repo.html_url;
       }
